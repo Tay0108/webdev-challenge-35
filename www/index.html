@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobile-first. I use bootstrap only for glyphicons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/odometer-default.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/odometer.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Weekly WebDev Challenge 35</title>
+</head>
+<body>
+<section class="intro">
+    <header>
+        <a class="page-logo" href="#">MoGo</a>
+        <button type="button" class="glyphicon glyphicon-menu-hamburger menu-hamburger" aria-hidden="true"></button>
+        <nav class="page-nav">
+            <a class="page-logo" href="#">MoGo</a>
+            <button type="button" class="glyphicon glyphicon-remove menu-close" aria-hidden="true"></button>
+            <ul>
+                <li><a class="menu-link" href="#about">About</a></li>
+                <li><a class="menu-link" href="#service">Service</a></li>
+                <li><a class="menu-link" href="#work">Work</a></li>
+                <li><a class="menu-link" href="#blog">Blog</a></li>
+                <li><a class="menu-link" href="#contact">Contact</a></li>
+                <li><a href="#shop" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
+                <li><a href="#search" class="glyphicon glyphicon-search" aria-hidden="true"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="welcome">
+        <h2 class="page-sub-title">Creative Template</h2>
+        <h1 class="page-title">Welcome to Mogo</h1>
+        <div class="rectangle-white"></div>
+        <a class="simple-button" href="#">Learn More</a>
+    </div>
+    <ul id="list-progress" class="list-progress">
+        <li>
+            <progress value="0"></progress>
+            <h3 class="progress-title"><span>01</span>Intro</h3>
+        </li>
+        <li>
+            <progress value="0"></progress>
+            <h3 class="progress-title"><span>02</span>Work</h3>
+        </li>
+        <li>
+            <progress value="0"></progress>
+            <h3 class="progress-title"><span>03</span>About</h3>
+        </li>
+        <li>
+            <progress value="0"></progress>
+            <h3 class="progress-title"><span>04</span>Contacts</h3>
+        </li>
+    </ul>
+</section>
+
+<!-- main container -->
+<main>
+    <section id="about">
+        <h4 class="section-sub-title">What we do</h4>
+        <h3 class="section-title">Story about us</h3>
+        <div class="rectangle-red"></div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis ut
+            posuere porta. Ut ornare, lorem nec aliquam auctor, mi ipsum ornare arcu, vitae finibus lacus quam eu odio.
+            Morbi condimentum tincidunt tortor, nec rutrum tortor tempus nec. Integer ac metus molestie, luctus ex vel,
+            ultrices ex. </p>
+        <ul class="about-images">
+            <li><img src="images/img_1.png"></li>
+            <li><img src="images/img_2.png"></li>
+            <li><img src="images/img_3.png"></li>
+        </ul>
+        <ul class="dynamic-numbers">
+            <li><span id="odometer1" class="odometer">0</span>Web design projects</li>
+            <li><span id="odometer2" class="odometer">0</span>Happy client</li>
+            <li><span id="odometer3" class="odometer">0</span>Award winner</li>
+            <li><span id="odometer4" class="odometer">0</span>Cup of coffee</li>
+            <li><span id="odometer5" class="odometer">0</span>Members</li>
+        </ul>
+    </section>
+    <section id="service" class="service">
+        <h4 class="section-sub-title">We work with</h4>
+        <h3 class="section-title">Amazing services</h3>
+        <div class="rectangle-red"></div>
+        <ul class="services-list">
+            <li><span class="glyphicon glyphicon-time"></span>
+                <dl>
+                    <dt>Photography</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                </dl>
+            </li>
+            <li><span class="glyphicon glyphicon-stats"></span>
+                <dl>
+                    <dt>Web design</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                </dl>
+            </li>
+            <li><span class="glyphicon glyphicon-blackboard"></span>
+                <dl>
+                    <dt>Creativity</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                </dl>
+            </li>
+            <li><span class="glyphicon glyphicon-book"></span>
+                <dl>
+                    <dt>SEO</dt>
+                    <dd>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                </dl>
+            </li>
+            <li><span class="glyphicon glyphicon-home"></span>
+                <dl>
+                    <dt>CSS/HTML</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                </dl>
+            </li>
+            <li><span class="glyphicon glyphicon-barcode"></span>
+                <dl>
+                    <dt>Digital</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+    <section id="design" class="design">
+        <div class="design-inner">
+            <h4 class="section-sub-title">For all devices</h4>
+            <h3 class="section-title">Unique design</h3>
+            <div class="rectangle-red"></div>
+            <img class="tablet" src="images/tablet.png">
+        </div>
+        <img class="phone" src="images/phone.png">
+    </section>
+    <section id="what-we-do">
+        <h4 class="section-sub-title">Service</h4>
+        <h3 class="section-title">What we do</h3>
+        <div class="rectangle-red"></div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis ut
+            posuere porta. Ut ornare, lorem nec aliquam auctor, mi ipsum ornare arcu, vitae finibus lacus quam eu odio.
+        </p>
+    </section>
+    <section id="meet-us">
+        <h4 class="section-sub-title">Who we are</h4>
+        <h3 class="section-title">Meet our team</h3>
+        <div class="rectangle-red"></div>
+    </section>
+    <section id="work">
+        <h4 class="section-sub-title">What we do</h4>
+        <h3 class="section-title">Some of our work</h3>
+        <div class="rectangle-red"></div>
+    </section>
+    <section id="opinions">
+        <h4 class="section-sub-title">Happy clients</h4>
+        <h3 class="section-title">What people say</h3>
+        <div class="rectangle-red"></div>
+    </section>
+    <section id="blog">
+        <h4 class="section-sub-title">Our stories</h4>
+        <h3 class="section-title">Latest blog</h3>
+        <div class="rectangle-red"></div>
+    </section>
+</main>
+<footer>
+</footer>
+<script src="js/main.js"></script>
+<script>
+    /* pewnie da sie ladniej, ale nie wiem na razie jak */
+    if (isScrolledIntoView(odometer1)) {
+        setTimeout(function () {
+            testScroll();
+        }, 10);
+    }
+    function testScroll() {
+        if (isScrolledIntoView(odometer1)) {
+            odometer1.innerHTML = 42;
+        }
+        if (isScrolledIntoView(odometer2)) {
+            odometer2.innerHTML = 123;
+        }
+        if (isScrolledIntoView(odometer3)) {
+            odometer3.innerHTML = 15;
+        }
+        if (isScrolledIntoView(odometer4)) {
+            odometer4.innerHTML = 99;
+        }
+        if (isScrolledIntoView(odometer5)) {
+            odometer5.innerHTML = 24;
+        }
+    }
+    window.onscroll = testScroll;
+</script>
+</body>
+</html>

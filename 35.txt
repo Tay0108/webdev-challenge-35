@@ -1,0 +1,12 @@
+﻿zadanie 35
+
+
+1. Start 01 maja 2017
+
+2. RWD
+
+ Slider z timerem, do pozostałych slajdów trzeba samemu dobrać text/tło
+
+W sekcji "facts" liczby mogą zacząć liczyć po pojawieniu się na ekranie
+.
+3. Dozwolne użycie bootstrapa
