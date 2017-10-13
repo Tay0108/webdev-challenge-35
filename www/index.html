@@ -148,21 +148,100 @@
         </p>
         <img src="images/sample1.jpg" class="image-photography" alt="sample image">
         <dl class="what_we_do-list">
-            <dt><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Photography<button id="photography-btn" class="glyphicon glyphicon-chevron-down arrow-down" aria-hidden="true"></button></dt>
-            <dd id="photography-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-            <dt><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>Creativity<button id="creativity-btn" class="glyphicon glyphicon-chevron-down arrow-down" aria-hidden="true"></button></dt>
-            <dd id="creativity-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-            <dt><span class="glyphicon glyphicon-record" aria-hidden="true"></span>Web Design<button id="web_design-btn" class="glyphicon glyphicon-chevron-down arrow-down" aria-hidden="true"></button></dt>
-            <dd id="web_design-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+            <dt><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Photography
+                <button id="photography-btn" class="glyphicon glyphicon-chevron-down arrow-down"
+                        aria-hidden="true"></button>
+            </dt>
+            <dd id="photography-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </dd>
+            <dt><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>Creativity
+                <button id="creativity-btn" class="glyphicon glyphicon-chevron-down arrow-down"
+                        aria-hidden="true"></button>
+            </dt>
+            <dd id="creativity-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </dd>
+            <dt><span class="glyphicon glyphicon-record" aria-hidden="true"></span>Web Design
+                <button id="web_design-btn" class="glyphicon glyphicon-chevron-down arrow-down"
+                        aria-hidden="true"></button>
+            </dt>
+            <dd id="web_design-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </dd>
         </dl>
-        <blockquote class="quote">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-        </blockquote>
+        <ul class="quotes-slider">
+            <li class="quote-slider-item">
+                <button class="quote-arrow-left" onclick="plusDivs(-1)">&lt;</button>
+                <blockquote class="quote">
+                    <span class="glyphicon glyphicon-comment quote-icon"></span>
+                    "The secret of getting ahead is getting started.”
+                    <footer>Mark Twain</footer>
+                </blockquote>
+                <button class="quote-arrow-right" onclick="plusDivs(1)">&gt;</button>
+            </li>
+            <li class="quote-slider-item">
+                <button class="quote-arrow-left" onclick="plusDivs(-1)">&lt;</button>
+                <blockquote class="quote">
+                    <span class="glyphicon glyphicon-comment quote-icon"></span>
+                    "It does not matter how slowly you go as long as you do not stop.”
+                    <footer>Confucius</footer>
+                </blockquote>
+                <button class="quote-arrow-right" onclick="plusDivs(1)">&gt;</button>
+            </li>
+            <li class="quote-slider-item">
+                <button class="quote-arrow-left" onclick="plusDivs(-1)">&lt;</button>
+                <blockquote class="quote">
+                    <span class="glyphicon glyphicon-comment quote-icon"></span>
+                    "Life is really simple, but we insist on making it complicated.”
+                    <footer>Confucius</footer>
+                </blockquote>
+                <button class="quote-arrow-right" onclick="plusDivs(1)">&gt;</button>
+            </li>
+        </ul>
     </section>
     <section id="meet-us">
         <h4 class="section-sub-title">Who we are</h4>
         <h3 class="section-title">Meet our team</h3>
         <div class="rectangle-red"></div>
+        <p class="who-we-are">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt fringilla quam, eget finibus nunc.
+            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id hendrerit gravida.
+        </p>
+        <ul class="team-members">
+            <li>
+                <img src="./images/member_1.png" alt="Andrzej" class="member-photo">
+                <span class="member-name">Matthew Dix</span>
+                <span class="member-title">Graphics Design</span>
+            </li>
+            <li>
+                <img src="./images/member_2.png" alt="Andrzej" class="member-photo">
+                <span class="member-name">Christopher Campbell</span>
+                <span class="member-title">Branding / UX Design</span>
+            </li>
+            <li>
+                <img src="./images/member_3.png" alt="Andrzej" class="member-photo">
+                <span class="member-name">Michael Fertig</span>
+                <span class="member-title">Developer</span>
+            </li>
+        </ul>
+        <ul class="companies">
+            <li><img src="./images/companies/company_1.png" alt=""></li>
+            <li><img src="./images/companies/company_2.png" alt=""></li>
+            <li><img src="./images/companies/company_3.png" alt=""></li>
+            <li><img src="./images/companies/company_4.png" alt=""></li>
+            <li><img src="./images/companies/company_5.png" alt=""></li>
+            <li><img src="./images/companies/company_6.png" alt=""></li>
+        </ul>
     </section>
     <section id="work">
         <h4 class="section-sub-title">What we do</h4>
@@ -184,6 +263,33 @@
 </footer>
 <script src="js/main.js"></script>
 <script>
+    // quotes slider:
+    var slideIndex = 1;
+    changeQuote(slideIndex);
+
+    function plusDivs(n) {
+        changeQuote(slideIndex += n);
+    }
+
+    function changeQuote(n) {
+        var i;
+        var x = document.getElementsByClassName("quote-slider-item");
+
+        // ustaw wszystkie li na display: none;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+
+        x[slideIndex - 1].style.display = "block";
+    }
+
     /* pewnie da sie ladniej, ale nie wiem na razie jak */
     if (isScrolledIntoView(odometer1)) {
         setTimeout(function () {

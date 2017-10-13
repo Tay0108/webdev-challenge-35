@@ -369,6 +369,7 @@ section {
 
 .what_we_do-list {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .what_we_do-list dt {
@@ -406,17 +407,102 @@ section {
 
 .quote {
     color: #999999;
-    min-height: 50px;
     display: block;
+    overflow: hidden;
+    float: left;
+    width: 80%;
+    padding: 15px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    margin-left: -40%;
+}
+
+.quote-icon {
+    border: 2px solid #95E1D3;
+    color: #95E1D3;
+    float: left;
+    padding: 12px;
+    margin-right: 5px;
+}
+
+.quotes-slider {
+    height: 100px;
     position: relative;
 }
 
-.quote:before {
+.quotes-slider:before {
     content: '';
     background-color: #F8F8F8;
     position: absolute;
     left: -30px;
     width: 100vw;
     z-index: -1;
+    height: 100px;
+}
+
+.quote footer {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.quote footer:before {
+    content: "\2014";
+    color: #F38181;
+    margin-right: 5px;
+}
+
+.quotes-slider-item {
+    display: none;
+}
+
+.quote-arrow-left {
+    display: block;
+    float: left;
     height: 100%;
+    background: none;
+    border: none;
+    width: 10%;
+    line-height: 100px;
+}
+
+.quote-arrow-right {
+    background: none;
+    border: none;
+    line-height: 100px;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    right: 0;
+}
+
+/* Meet our team */
+
+.who-we-are {
+    text-align: center;
+}
+
+.team-members {
+
+}
+
+.member-photo {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.member-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    color: #333333;
+}
+
+.member-title {
+    display: block;
+    text-align: center;
 }
