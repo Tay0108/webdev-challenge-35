@@ -181,31 +181,31 @@
         </dl>
         <ul class="quotes-slider">
             <li class="quote-slider-item">
-                <button class="quote-arrow-left" onclick="plusDivs(-1)">&lt;</button>
+                <button class="quote-arrow-left">&lt;</button>
                 <blockquote class="quote">
                     <span class="glyphicon glyphicon-comment quote-icon"></span>
                     "The secret of getting ahead is getting started.”
                     <footer>Mark Twain</footer>
                 </blockquote>
-                <button class="quote-arrow-right" onclick="plusDivs(1)">&gt;</button>
+                <button class="quote-arrow-right">&gt;</button>
             </li>
             <li class="quote-slider-item">
-                <button class="quote-arrow-left" onclick="plusDivs(-1)">&lt;</button>
+                <button class="quote-arrow-left">&lt;</button>
                 <blockquote class="quote">
                     <span class="glyphicon glyphicon-comment quote-icon"></span>
                     "It does not matter how slowly you go as long as you do not stop.”
                     <footer>Confucius</footer>
                 </blockquote>
-                <button class="quote-arrow-right" onclick="plusDivs(1)">&gt;</button>
+                <button class="quote-arrow-right" >&gt;</button>
             </li>
             <li class="quote-slider-item">
-                <button class="quote-arrow-left" onclick="plusDivs(-1)">&lt;</button>
+                <button class="quote-arrow-left">&lt;</button>
                 <blockquote class="quote">
                     <span class="glyphicon glyphicon-comment quote-icon"></span>
                     "Life is really simple, but we insist on making it complicated.”
                     <footer>Confucius</footer>
                 </blockquote>
-                <button class="quote-arrow-right" onclick="plusDivs(1)">&gt;</button>
+                <button class="quote-arrow-right">&gt;</button>
             </li>
         </ul>
     </section>
@@ -262,58 +262,5 @@
 <footer>
 </footer>
 <script src="js/main.js"></script>
-<script>
-    // quotes slider:
-    var slideIndex = 1;
-    changeQuote(slideIndex);
-
-    function plusDivs(n) {
-        changeQuote(slideIndex += n);
-    }
-
-    function changeQuote(n) {
-        var i;
-        var x = document.getElementsByClassName("quote-slider-item");
-
-        // ustaw wszystkie li na display: none;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-
-        x[slideIndex - 1].style.display = "block";
-    }
-
-    /* pewnie da sie ladniej, ale nie wiem na razie jak */
-    if (isScrolledIntoView(odometer1)) {
-        setTimeout(function () {
-            testScroll();
-        }, 10);
-    }
-    function testScroll() {
-        if (isScrolledIntoView(odometer1)) {
-            odometer1.innerHTML = 42;
-        }
-        if (isScrolledIntoView(odometer2)) {
-            odometer2.innerHTML = 123;
-        }
-        if (isScrolledIntoView(odometer3)) {
-            odometer3.innerHTML = 15;
-        }
-        if (isScrolledIntoView(odometer4)) {
-            odometer4.innerHTML = 99;
-        }
-        if (isScrolledIntoView(odometer5)) {
-            odometer5.innerHTML = 24;
-        }
-    }
-    window.onscroll = testScroll;
-</script>
 </body>
 </html>
