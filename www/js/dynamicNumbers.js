@@ -1,5 +1,7 @@
 'use strict';
 
+require('odometer');
+
 // scrolling odometer
 function dynamicNumbers() {
 
