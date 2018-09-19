@@ -41,7 +41,14 @@ function dynamicNumbers() {
         }, 10);
     }
 
-    window.onscroll = testScroll;
+    function init() {
+        window.onscroll = testScroll;
+    }
+
+    return {
+        init: init
+    }
+    
 }
 
 export default dynamicNumbers;

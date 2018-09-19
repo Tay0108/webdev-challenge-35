@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './www/js/main.js',
+  entry: './src/js/main.js',
 
   devServer: {
     inline: true,

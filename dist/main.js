@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./www/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/main.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,63 +97,63 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(
 
 /***/ }),
 
-/***/ "./www/js/dynamicNumbers.js":
+/***/ "./src/js/dynamicNumbers.js":
 /*!**********************************!*\
-  !*** ./www/js/dynamicNumbers.js ***!
+  !*** ./src/js/dynamicNumbers.js ***!
   \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n__webpack_require__(/*! odometer */ \"./node_modules/odometer/odometer.js\");\r\n\r\n// scrolling odometer\r\nfunction dynamicNumbers() {\r\n\r\n    // checking, if user scrolled to certain element\r\n    function isScrolledIntoView(elem) {\r\n\r\n        let docViewTop = $(window).scrollTop();\r\n        let docViewBottom = docViewTop + $(window).height();\r\n        let elemTop = $(elem).offset().top;\r\n        let elemBottom = elemTop + $(elem).height();\r\n\r\n        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));\r\n    }\r\n\r\n    function testScroll() {\r\n\r\n        if (isScrolledIntoView(odometer1)) {\r\n            odometer1.innerHTML = 42;\r\n        }\r\n        if (isScrolledIntoView(odometer2)) {\r\n            odometer2.innerHTML = 123;\r\n        }\r\n        if (isScrolledIntoView(odometer3)) {\r\n            odometer3.innerHTML = 15;\r\n        }\r\n        if (isScrolledIntoView(odometer4)) {\r\n            odometer4.innerHTML = 99;\r\n        }\r\n        if (isScrolledIntoView(odometer5)) {\r\n            odometer5.innerHTML = 24;\r\n        }\r\n    }\r\n\r\n    if (isScrolledIntoView(odometer1)) {\r\n        setTimeout(function () {\r\n            testScroll();\r\n        }, 10);\r\n    }\r\n\r\n    window.onscroll = testScroll;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (dynamicNumbers);\r\n\n\n//# sourceURL=webpack:///./www/js/dynamicNumbers.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n__webpack_require__(/*! odometer */ \"./node_modules/odometer/odometer.js\");\r\n\r\n// scrolling odometer\r\nfunction dynamicNumbers() {\r\n\r\n    // checking, if user scrolled to certain element\r\n    function isScrolledIntoView(elem) {\r\n\r\n        let docViewTop = $(window).scrollTop();\r\n        let docViewBottom = docViewTop + $(window).height();\r\n        let elemTop = $(elem).offset().top;\r\n        let elemBottom = elemTop + $(elem).height();\r\n\r\n        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));\r\n    }\r\n\r\n    function testScroll() {\r\n\r\n        if (isScrolledIntoView(odometer1)) {\r\n            odometer1.innerHTML = 42;\r\n        }\r\n        if (isScrolledIntoView(odometer2)) {\r\n            odometer2.innerHTML = 123;\r\n        }\r\n        if (isScrolledIntoView(odometer3)) {\r\n            odometer3.innerHTML = 15;\r\n        }\r\n        if (isScrolledIntoView(odometer4)) {\r\n            odometer4.innerHTML = 99;\r\n        }\r\n        if (isScrolledIntoView(odometer5)) {\r\n            odometer5.innerHTML = 24;\r\n        }\r\n    }\r\n\r\n    if (isScrolledIntoView(odometer1)) {\r\n        setTimeout(function () {\r\n            testScroll();\r\n        }, 10);\r\n    }\r\n\r\n    function init() {\r\n        window.onscroll = testScroll;\r\n    }\r\n\r\n    return {\r\n        init: init\r\n    }\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (dynamicNumbers);\r\n\n\n//# sourceURL=webpack:///./src/js/dynamicNumbers.js?");
 
 /***/ }),
 
-/***/ "./www/js/main.js":
+/***/ "./src/js/main.js":
 /*!************************!*\
-  !*** ./www/js/main.js ***!
+  !*** ./src/js/main.js ***!
   \************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ \"./www/js/menu.js\");\n/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services */ \"./www/js/services.js\");\n/* harmony import */ var _quotesSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./quotesSlider */ \"./www/js/quotesSlider.js\");\n/* harmony import */ var _dynamicNumbers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dynamicNumbers */ \"./www/js/dynamicNumbers.js\");\n\n\n\n\n\n\n\nlet mainMenu = Object(_menu__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nmainMenu.init();\n\nObject(_services__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\nObject(_quotesSlider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\nObject(_dynamicNumbers__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n\n//# sourceURL=webpack:///./www/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ \"./src/js/menu.js\");\n/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services */ \"./src/js/services.js\");\n/* harmony import */ var _quotesSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./quotesSlider */ \"./src/js/quotesSlider.js\");\n/* harmony import */ var _dynamicNumbers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dynamicNumbers */ \"./src/js/dynamicNumbers.js\");\n\n\n\n\n\n\n\nlet menuInstance = Object(_menu__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nmenuInstance.init();\n\nlet servicesInstance = Object(_services__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nservicesInstance.init();\n\nlet quotesSliderInstance = Object(_quotesSlider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\nquotesSliderInstance.init(); \n\nlet dynamicNumbersInstance = Object(_dynamicNumbers__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\ndynamicNumbersInstance.init();\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./www/js/menu.js":
+/***/ "./src/js/menu.js":
 /*!************************!*\
-  !*** ./www/js/menu.js ***!
+  !*** ./src/js/menu.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n// menu module:\r\nfunction menu() {\r\n\r\n    // opening menu:\r\n    function open() {\r\n        document.querySelector('.page-nav').classList.add('page-nav-opened');\r\n        document.querySelector('.menu-hamburger').classList.add('.menu-hamburger-hidden');\r\n    }\r\n\r\n    // closing menu:\r\n    function close() {\r\n        document.querySelector('.page-nav').classList.remove('page-nav-opened');\r\n        document.querySelector('.menu-hamburger').classList.remove('.menu-hamburger-hidden');\r\n    }\r\n\r\n    function init() {\r\n        let hamburger = document.querySelector('.menu-hamburger');\r\n        hamburger.addEventListener('click', open);\r\n\r\n        let cross = document.querySelector('.menu-close');\r\n        cross.addEventListener('click', close);\r\n    }\r\n\r\n    return {\r\n        init: init\r\n    };\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\n\n//# sourceURL=webpack:///./www/js/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n// menu module:\r\nfunction menu() {\r\n\r\n    // opening menu:\r\n    function open() {\r\n        document.querySelector('.page-nav').classList.add('page-nav-opened');\r\n        document.querySelector('.menu-hamburger').classList.add('.menu-hamburger-hidden');\r\n    }\r\n\r\n    // closing menu:\r\n    function close() {\r\n        document.querySelector('.page-nav').classList.remove('page-nav-opened');\r\n        document.querySelector('.menu-hamburger').classList.remove('.menu-hamburger-hidden');\r\n    }\r\n\r\n    function init() {\r\n        let hamburger = document.querySelector('.menu-hamburger');\r\n        hamburger.addEventListener('click', open);\r\n\r\n        let cross = document.querySelector('.menu-close');\r\n        cross.addEventListener('click', close);\r\n    }\r\n\r\n    return {\r\n        init: init\r\n    };\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\n\n//# sourceURL=webpack:///./src/js/menu.js?");
 
 /***/ }),
 
-/***/ "./www/js/quotesSlider.js":
+/***/ "./src/js/quotesSlider.js":
 /*!********************************!*\
-  !*** ./www/js/quotesSlider.js ***!
+  !*** ./src/js/quotesSlider.js ***!
   \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n// quotes module\r\nfunction quotesSlider() {\r\n\r\n    let slideIndex = 1;\r\n    changeQuote(slideIndex);\r\n\r\n    function plusDivs(n) {\r\n        changeQuote(slideIndex += n);\r\n    }\r\n\r\n    function changeQuote(n) {\r\n        let singleSlide = document.getElementsByClassName('quote-slider-item');\r\n\r\n        //set all <li> on display: none;\r\n        for (let i = 0; i < singleSlide.length; i++) {\r\n            singleSlide[i].style.display = 'none';\r\n        }\r\n\r\n        if (n > singleSlide.length) {\r\n            slideIndex = 1;\r\n        }\r\n        if (n < 1) {\r\n            slideIndex = singleSlide.length;\r\n        }\r\n\r\n        singleSlide[slideIndex - 1].style.display = 'block';\r\n    }\r\n\r\n    let arrowsLeft = document.getElementsByClassName('quote-arrow-left');\r\n    let arrowsRight = document.getElementsByClassName('quote-arrow-right');\r\n\r\n    for (let i = 0; i < arrowsLeft.length; i++) { // we can use one loop since there is same amount of arrows\r\n        arrowsRight[i].addEventListener('click',() => {\r\n            plusDivs(1);\r\n        });\r\n        arrowsLeft[i].addEventListener('click',() => {\r\n            plusDivs(-1);\r\n        });\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (quotesSlider);\r\n\n\n//# sourceURL=webpack:///./www/js/quotesSlider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n// quotes module\r\nfunction quotesSlider() {\r\n\r\n    let slideIndex = 1;\r\n    let arrowsLeft;\r\n    let arrowsRight;\r\n\r\n    function plusDivs(n) {\r\n        changeQuote(slideIndex += n);\r\n    }\r\n\r\n    function changeQuote(n) {\r\n        let singleSlide = document.getElementsByClassName('quote-slider-item');\r\n\r\n        //set all <li> on display: none;\r\n        for (let i = 0; i < singleSlide.length; i++) {\r\n            singleSlide[i].style.display = 'none';\r\n        }\r\n\r\n        if (n > singleSlide.length) {\r\n            slideIndex = 1;\r\n        }\r\n        if (n < 1) {\r\n            slideIndex = singleSlide.length;\r\n        }\r\n\r\n        singleSlide[slideIndex - 1].style.display = 'block';\r\n    }\r\n\r\n    function init() {\r\n        changeQuote(slideIndex);\r\n        arrowsLeft = document.getElementsByClassName('quote-arrow-left');\r\n        arrowsRight = document.getElementsByClassName('quote-arrow-right');\r\n\r\n        for (let i = 0; i < arrowsLeft.length; i++) { // we can use one loop since there is same amount of arrows\r\n            arrowsRight[i].addEventListener('click', function () {\r\n                plusDivs(1);\r\n            });\r\n            arrowsLeft[i].addEventListener('click', function () {\r\n                plusDivs(-1);\r\n            });\r\n        }\r\n    }\r\n\r\n    return {\r\n        init: init\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (quotesSlider);\r\n\n\n//# sourceURL=webpack:///./src/js/quotesSlider.js?");
 
 /***/ }),
 
-/***/ "./www/js/services.js":
+/***/ "./src/js/services.js":
 /*!****************************!*\
-  !*** ./www/js/services.js ***!
+  !*** ./src/js/services.js ***!
   \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n// services module:\r\nfunction services() {\r\n\r\n    $('#photography-btn').click(function () {\r\n        $('#photography-description').slideToggle('slow');\r\n    });\r\n\r\n    $('#creativity-btn').click(function () {\r\n        $('#creativity-description').slideToggle('slow');\r\n    });\r\n\r\n    $('#web_design-btn').click(function () {\r\n        $('#web_design-description').slideToggle('slow');\r\n    });\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (services);\r\n\n\n//# sourceURL=webpack:///./www/js/services.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n// services module:\r\nfunction services() {\r\n\r\n    function init() {\r\n        $('#photography-btn').click(function () {\r\n            $('#photography-description').slideToggle('slow');\r\n        });\r\n\r\n        $('#creativity-btn').click(function () {\r\n            $('#creativity-description').slideToggle('slow');\r\n        });\r\n\r\n        $('#web_design-btn').click(function () {\r\n            $('#web_design-description').slideToggle('slow');\r\n        });\r\n    }\r\n\r\n    return {\r\n        init: init\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (services);\r\n\n\n//# sourceURL=webpack:///./src/js/services.js?");
 
 /***/ })
 

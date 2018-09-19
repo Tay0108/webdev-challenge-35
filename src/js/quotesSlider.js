@@ -4,7 +4,8 @@
 function quotesSlider() {
 
     let slideIndex = 1;
-    changeQuote(slideIndex);
+    let arrowsLeft;
+    let arrowsRight;
 
     function plusDivs(n) {
         changeQuote(slideIndex += n);
@@ -28,16 +29,23 @@ function quotesSlider() {
         singleSlide[slideIndex - 1].style.display = 'block';
     }
 
-    let arrowsLeft = document.getElementsByClassName('quote-arrow-left');
-    let arrowsRight = document.getElementsByClassName('quote-arrow-right');
+    function init() {
+        changeQuote(slideIndex);
+        arrowsLeft = document.getElementsByClassName('quote-arrow-left');
+        arrowsRight = document.getElementsByClassName('quote-arrow-right');
 
-    for (let i = 0; i < arrowsLeft.length; i++) { // we can use one loop since there is same amount of arrows
-        arrowsRight[i].addEventListener('click',() => {
-            plusDivs(1);
-        });
-        arrowsLeft[i].addEventListener('click',() => {
-            plusDivs(-1);
-        });
+        for (let i = 0; i < arrowsLeft.length; i++) { // we can use one loop since there is same amount of arrows
+            arrowsRight[i].addEventListener('click', function () {
+                plusDivs(1);
+            });
+            arrowsLeft[i].addEventListener('click', function () {
+                plusDivs(-1);
+            });
+        }
+    }
+
+    return {
+        init: init
     }
 }
 
