@@ -369,7 +369,7 @@ section {
 
 .what_we_do-list {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .what_we_do-list dt {
@@ -439,7 +439,7 @@ section {
     left: -30px;
     width: 100vw;
     z-index: -1;
-    height: 100px;
+    height: 100%;
 }
 
 .quote footer {
@@ -483,10 +483,6 @@ section {
     text-align: center;
 }
 
-.team-members {
-
-}
-
 .member-photo {
     width: 100%;
     height: auto;
@@ -505,4 +501,21 @@ section {
 .member-title {
     display: block;
     text-align: center;
+}
+
+.companies {
+    background-color: #F5F5F5;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.companies:before {
+    content: '';
+    background-color: #F5F5F5;
+    position: absolute;
+    width: 100vw;
+    left: -30px;
+    height: 100%;
+    z-index: -1;
 }
