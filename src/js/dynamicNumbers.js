@@ -1,6 +1,7 @@
 'use strict';
 
-require('odometer');
+import 'jquery';
+import 'odometer';
 
 // scrolling odometer
 function dynamicNumbers() {
