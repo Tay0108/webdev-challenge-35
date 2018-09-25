@@ -1,5 +1,7 @@
 'use strict';
 
+import 'jquery';
+
 // services module:
 function services() {
 
