@@ -515,3 +515,25 @@ section {
     height: 100%;
     z-index: -1;
 }
+
+.our-works {
+    position: relative;
+    font-size: 0;
+}
+
+.our-works:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    background-color: #F38181;
+    height:100%;
+    left: -30px;
+}
+
+.our-works li a img {
+    width: 100vw;
+    height: auto;
+    margin-left: -30px;
+    outline: 0;
+}
