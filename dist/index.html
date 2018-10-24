@@ -1,274 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Mobile-first. I use bootstrap only for glyphicons -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/odometer-default.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <title>Weekly WebDev Challenge 35</title>
 </head>
+
 <body>
-<section class="intro">
-    <header>
-        <a class="page-logo" href="#">MoGo</a>
-        <button type="button" class="glyphicon glyphicon-menu-hamburger menu-hamburger" aria-hidden="true"></button>
-        <nav class="page-nav">
+    <section class="intro">
+        <header>
             <a class="page-logo" href="#">MoGo</a>
-            <button type="button" class="glyphicon glyphicon-remove menu-close" aria-hidden="true"></button>
-            <ul>
-                <li><a class="menu-link" href="#about">About</a></li>
-                <li><a class="menu-link" href="#service">Service</a></li>
-                <li><a class="menu-link" href="#work">Work</a></li>
-                <li><a class="menu-link" href="#blog">Blog</a></li>
-                <li><a class="menu-link" href="#contact">Contact</a></li>
-                <li><a href="#shop" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
-                <li><a href="#search" class="glyphicon glyphicon-search" aria-hidden="true"></a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="welcome">
-        <h2 class="page-sub-title">Creative Template</h2>
-        <h1 class="page-title">Welcome to Mogo</h1>
-        <div class="rectangle-white"></div>
-        <a class="simple-button" href="#">Learn More</a>
-    </div>
-    <ul id="list-progress" class="list-progress">
-        <li>
-            <progress value="0"></progress>
-            <h3 class="progress-title"><span>01</span>Intro</h3>
-        </li>
-        <li>
-            <progress value="0"></progress>
-            <h3 class="progress-title"><span>02</span>Work</h3>
-        </li>
-        <li>
-            <progress value="0"></progress>
-            <h3 class="progress-title"><span>03</span>About</h3>
-        </li>
-        <li>
-            <progress value="0"></progress>
-            <h3 class="progress-title"><span>04</span>Contacts</h3>
-        </li>
-    </ul>
-</section>
-
-<!-- main container -->
-<main>
-    <section id="about">
-        <h4 class="section-sub-title">What we do</h4>
-        <h3 class="section-title">Story about us</h3>
-        <div class="rectangle-red"></div>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis ut
-            posuere porta. Ut ornare, lorem nec aliquam auctor, mi ipsum ornare arcu, vitae finibus lacus quam eu odio.
-            Morbi condimentum tincidunt tortor, nec rutrum tortor tempus nec. Integer ac metus molestie, luctus ex vel,
-            ultrices ex. </p>
-        <ul class="about-images">
-            <li><img src="images/img_1.png"></li>
-            <li><img src="images/img_2.png"></li>
-            <li><img src="images/img_3.png"></li>
-        </ul>
-        <ul class="dynamic-numbers">
-            <li><span id="odometer1" class="odometer">0</span>Web design projects</li>
-            <li><span id="odometer2" class="odometer">0</span>Happy client</li>
-            <li><span id="odometer3" class="odometer">0</span>Award winner</li>
-            <li><span id="odometer4" class="odometer">0</span>Cup of coffee</li>
-            <li><span id="odometer5" class="odometer">0</span>Members</li>
-        </ul>
-    </section>
-    <section id="service" class="service">
-        <h4 class="section-sub-title">We work with</h4>
-        <h3 class="section-title">Amazing services</h3>
-        <div class="rectangle-red"></div>
-        <ul class="services-list">
-            <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                <dl>
-                    <dt>Photography</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
-                </dl>
-            </li>
-            <li><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-                <dl>
-                    <dt>Web design</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
-                </dl>
-            </li>
-            <li><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
-                <dl>
-                    <dt>Creativity</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
-                </dl>
-            </li>
-            <li><span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                <dl>
-                    <dt>SEO</dt>
-                    <dd>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
-                </dl>
-            </li>
-            <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                <dl>
-                    <dt>CSS/HTML</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
-                </dl>
-            </li>
-            <li><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span>
-                <dl>
-                    <dt>Digital</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
-                </dl>
-            </li>
-        </ul>
-    </section>
-    <section id="design" class="design">
-        <div class="design-inner">
-            <h4 class="section-sub-title">For all devices</h4>
-            <h3 class="section-title">Unique design</h3>
-            <div class="rectangle-red"></div>
-            <img class="tablet" src="images/tablet.png">
+            <button type="button" class="fas fas-menu-hamburger menu-hamburger" aria-hidden="true"></button>
+            <nav class="page-nav">
+                <a class="page-logo" href="#">MoGo</a>
+                <button type="button" class="fas fas-remove menu-close" aria-hidden="true"></button>
+                <ul>
+                    <li><a class="menu-link" href="#about">About</a></li>
+                    <li><a class="menu-link" href="#service">Service</a></li>
+                    <li><a class="menu-link" href="#work">Work</a></li>
+                    <li><a class="menu-link" href="#blog">Blog</a></li>
+                    <li><a class="menu-link" href="#contact">Contact</a></li>
+                    <li><a href="#shop" class="fas fas-shopping-cart" aria-hidden="true"></a></li>
+                    <li><a href="#search" class="fas fas-search" aria-hidden="true"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="welcome">
+            <h2 class="page-sub-title">Creative Template</h2>
+            <h1 class="page-title">Welcome to Mogo</h1>
+            <div class="rectangle-white"></div>
+            <a class="simple-button" href="#">Learn More</a>
         </div>
-        <img class="phone" src="images/phone.png">
-    </section>
-    <section id="what_we_do">
-        <h4 class="section-sub-title">Service</h4>
-        <h3 class="section-title">What we do</h3>
-        <div class="rectangle-red"></div>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis ut
-            posuere porta. Ut ornare, lorem nec aliquam auctor, mi ipsum ornare arcu, vitae finibus lacus quam eu odio.
-        </p>
-        <img src="images/sample1.jpg" class="image-photography" alt="sample image">
-        <dl class="what_we_do-list">
-            <dt><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Photography
-                <button id="photography-btn" class="glyphicon glyphicon-chevron-down arrow-down"
-                        aria-hidden="true"></button>
-            </dt>
-            <dd id="photography-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </dd>
-            <dt><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>Creativity
-                <button id="creativity-btn" class="glyphicon glyphicon-chevron-down arrow-down"
-                        aria-hidden="true"></button>
-            </dt>
-            <dd id="creativity-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </dd>
-            <dt><span class="glyphicon glyphicon-record" aria-hidden="true"></span>Web Design
-                <button id="web_design-btn" class="glyphicon glyphicon-chevron-down arrow-down"
-                        aria-hidden="true"></button>
-            </dt>
-            <dd id="web_design-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </dd>
-        </dl>
-        <ul class="quotes-slider">
-            <li class="quote-slider-item">
-                <button class="quote-arrow-left">&lt;</button>
-                <blockquote class="quote">
-                    <span class="glyphicon glyphicon-comment quote-icon"></span>
-                    "The secret of getting ahead is getting started.”
-                    <footer>Mark Twain</footer>
-                </blockquote>
-                <button class="quote-arrow-right">&gt;</button>
+        <ul id="list-progress" class="list-progress">
+            <li>
+                <progress value="0"></progress>
+                <h3 class="progress-title"><span>01</span>Intro</h3>
             </li>
-            <li class="quote-slider-item">
-                <button class="quote-arrow-left">&lt;</button>
-                <blockquote class="quote">
-                    <span class="glyphicon glyphicon-comment quote-icon"></span>
-                    "It does not matter how slowly you go as long as you do not stop.”
-                    <footer>Confucius</footer>
-                </blockquote>
-                <button class="quote-arrow-right" >&gt;</button>
+            <li>
+                <progress value="0"></progress>
+                <h3 class="progress-title"><span>02</span>Work</h3>
             </li>
-            <li class="quote-slider-item">
-                <button class="quote-arrow-left">&lt;</button>
-                <blockquote class="quote">
-                    <span class="glyphicon glyphicon-comment quote-icon"></span>
-                    "Life is really simple, but we insist on making it complicated.”
-                    <footer>Confucius</footer>
-                </blockquote>
-                <button class="quote-arrow-right">&gt;</button>
+            <li>
+                <progress value="0"></progress>
+                <h3 class="progress-title"><span>03</span>About</h3>
+            </li>
+            <li>
+                <progress value="0"></progress>
+                <h3 class="progress-title"><span>04</span>Contacts</h3>
             </li>
         </ul>
     </section>
-    <section id="meet-us">
-        <h4 class="section-sub-title">Who we are</h4>
-        <h3 class="section-title">Meet our team</h3>
-        <div class="rectangle-red"></div>
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt fringilla quam, eget finibus nunc.
-            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id hendrerit gravida.
-        </p>
-        <ul class="team-members">
-            <li>
-                <img src="./images/member_1.png" alt="Andrzej" class="member-photo">
-                <span class="member-name">Matthew Dix</span>
-                <span class="member-title">Graphics Design</span>
-            </li>
-            <li>
-                <img src="./images/member_2.png" alt="Andrzej" class="member-photo">
-                <span class="member-name">Christopher Campbell</span>
-                <span class="member-title">Branding / UX Design</span>
-            </li>
-            <li>
-                <img src="./images/member_3.png" alt="Andrzej" class="member-photo">
-                <span class="member-name">Michael Fertig</span>
-                <span class="member-title">Developer</span>
-            </li>
-        </ul>
-        <ul class="companies">
-            <li><img src="./images/companies/company_1.png" alt=""></li>
-            <li><img src="./images/companies/company_2.png" alt=""></li>
-            <li><img src="./images/companies/company_3.png" alt=""></li>
-            <li><img src="./images/companies/company_4.png" alt=""></li>
-            <li><img src="./images/companies/company_5.png" alt=""></li>
-            <li><img src="./images/companies/company_6.png" alt=""></li>
-        </ul>
-    </section>
-    <section id="work">
-        <h4 class="section-sub-title">What we do</h4>
-        <h3 class="section-title">Some of our work</h3>
-        <div class="rectangle-red"></div>
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt fringilla quam, eget finibus nunc.
-            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id hendrerit gravida.
-        </p>
 
-        <ul class="our-works">
-            <li><a href="#"><img src="images/works/work_1.png" alt=""></a></li>
-            <li><a href="#"><img src="images/works/work_2.png" alt=""></a></li>
-            <li><a href="#"><img src="images/works/work_3.png" alt=""></a></li>
-            <li><a href="#"><img src="images/works/work_4.png" alt=""></a></li>
-            <li><a href="#"><img src="images/works/work_5.png" alt=""></a></li>
-            <li><a href="#"><img src="images/works/work_6.png" alt=""></a></li>
-            <li><a href="#"><img src="images/works/work_7.png" alt=""></a></li>
-        </ul>
-    </section>
-    <section id="opinions">
-        <h4 class="section-sub-title">Happy clients</h4>
-        <h3 class="section-title">What people say</h3>
-        <div class="rectangle-red"></div>
-    </section>
-    <section id="blog">
-        <h4 class="section-sub-title">Our stories</h4>
-        <h3 class="section-title">Latest blog</h3>
-        <div class="rectangle-red"></div>
-    </section>
-</main>
-<footer>
-</footer>
-<script src="./bundle.js"></script>
+    <!-- main container -->
+    <main>
+        <section id="about">
+            <h4 class="section-sub-title">What we do</h4>
+            <h3 class="section-title">Story about us</h3>
+            <div class="rectangle-red"></div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis ut
+                posuere porta. Ut ornare, lorem nec aliquam auctor, mi ipsum ornare arcu, vitae finibus lacus quam eu
+                odio.
+                Morbi condimentum tincidunt tortor, nec rutrum tortor tempus nec. Integer ac metus molestie, luctus ex
+                vel,
+                ultrices ex. </p>
+            <ul class="about-images">
+                <li><img src="images/img_1.png"></li>
+                <li><img src="images/img_2.png"></li>
+                <li><img src="images/img_3.png"></li>
+            </ul>
+            <ul class="dynamic-numbers">
+                <li><span id="odometer1" class="odometer">0</span>Web design projects</li>
+                <li><span id="odometer2" class="odometer">0</span>Happy client</li>
+                <li><span id="odometer3" class="odometer">0</span>Award winner</li>
+                <li><span id="odometer4" class="odometer">0</span>Cup of coffee</li>
+                <li><span id="odometer5" class="odometer">0</span>Members</li>
+            </ul>
+        </section>
+        <section id="service" class="service">
+            <h4 class="section-sub-title">We work with</h4>
+            <h3 class="section-title">Amazing services</h3>
+            <div class="rectangle-red"></div>
+            <ul class="services-list">
+                <li><span class="fas fa-camera" aria-hidden="true"></span>
+                    <dl>
+                        <dt>Photography</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                    </dl>
+                </li>
+                <li><span class="fas fa-desktop" aria-hidden="true"></span>
+                    <dl>
+                        <dt>Web design</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                    </dl>
+                </li>
+                <li><span class="fas fa-paint-brush" aria-hidden="true"></span>
+                    <dl>
+                        <dt>Creativity</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                    </dl>
+                </li>
+                <li><span class="fas fa-book" aria-hidden="true"></span>
+                    <dl>
+                        <dt>SEO</dt>
+                        <dd>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                    </dl>
+                </li>
+                <li><span class="fas fa-code" aria-hidden="true"></span>
+                    <dl>
+                        <dt>CSS/HTML</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                    </dl>
+                </li>
+                <li><span class="fas fa-barcode" aria-hidden="true"></span>
+                    <dl>
+                        <dt>Digital</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section id="design" class="design">
+            <div class="design-inner">
+                <h4 class="section-sub-title">For all devices</h4>
+                <h3 class="section-title">Unique design</h3>
+                <div class="rectangle-red"></div>
+                <img class="tablet" src="images/tablet.png">
+            </div>
+            <img class="phone" src="images/phone.png">
+        </section>
+        <section id="what_we_do">
+            <h4 class="section-sub-title">Service</h4>
+            <h3 class="section-title">What we do</h3>
+            <div class="rectangle-red"></div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue felis ut
+                posuere porta. Ut ornare, lorem nec aliquam auctor, mi ipsum ornare arcu, vitae finibus lacus quam eu
+                odio.
+            </p>
+            <img src="images/sample1.jpg" class="image-photography" alt="sample image">
+            <dl class="what_we_do-list">
+                <dt><span class="fas fa-camera what-we-do-icon" aria-hidden="true"></span>Photography
+                    <button id="photography-btn" class="fas fa-chevron-down arrow-down what-we-do-icon" aria-hidden="true"></button>
+                </dt>
+                <dd id="photography-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </dd>
+                <dt><span class="fas fa-paint-brush what-we-do-icon" aria-hidden="true"></span>Creativity
+                    <button id="creativity-btn" class="fas fa-chevron-down arrow-down what-we-do-icon" aria-hidden="true"></button>
+                </dt>
+                <dd id="creativity-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </dd>
+                <dt><span class="fas fa-desktop what-we-do-icon" aria-hidden="true"></span>Web Design
+                    <button id="web_design-btn" class="fas fa-chevron-down arrow-down what-we-do-icon" aria-hidden="true"></button>
+                </dt>
+                <dd id="web_design-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </dd>
+            </dl>
+            <ul class="quotes-slider" id="FIRST_SLIDER">
+                <li class="quote-slider-item">
+                    <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
+                    <blockquote class="quote">
+                        <span class="fas fa-comment quote-icon"></span>
+                        <div class="quote-text">"The secret of getting ahead is getting started.”
+                            <footer>Mark Twain</footer>
+                        </div>
+                    </blockquote>
+                    <button class="quote-arrow-right"><span class="fas fa-angle-right"></span></button>
+                </li>
+                <li class="quote-slider-item">
+                    <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
+                    <blockquote class="quote">
+                        <span class="fas fa-comment quote-icon"></span>
+                        <div class="quote-text">"It does not matter how slowly you go as long as you do not stop.”
+                            <footer>Confucius</footer>
+                        </div>
+                    </blockquote>
+                    <button class="quote-arrow-right"><span class="fas fa-angle-right"></span></button>
+                </li>
+                <li class="quote-slider-item">
+                    <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
+                    <blockquote class="quote">
+                        <span class="fas fa-comment quote-icon"></span>
+                        <div class="quote-text">"Life is really simple, but we insist on making it complicated.”
+                            <footer>Confucius</footer>
+                        </div>
+                    </blockquote>
+                    <button class="quote-arrow-right"><span class="fas fa-angle-right"></span></button>
+                </li>
+            </ul>
+        </section>
+        <section id="meet-us">
+            <h4 class="section-sub-title">Who we are</h4>
+            <h3 class="section-title">Meet our team</h3>
+            <div class="rectangle-red"></div>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt fringilla quam, eget finibus
+                nunc.
+                Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id hendrerit
+                gravida.
+            </p>
+            <ul class="team-members">
+                <li>
+                    <img src="./images/member_1.png" alt="Andrzej" class="member-photo">
+                    <span class="member-name">Matthew Dix</span>
+                    <span class="member-title">Graphics Design</span>
+                </li>
+                <li>
+                    <img src="./images/member_2.png" alt="Andrzej" class="member-photo">
+                    <span class="member-name">Christopher Campbell</span>
+                    <span class="member-title">Branding / UX Design</span>
+                </li>
+                <li>
+                    <img src="./images/member_3.png" alt="Andrzej" class="member-photo">
+                    <span class="member-name">Michael Fertig</span>
+                    <span class="member-title">Developer</span>
+                </li>
+            </ul>
+            <ul class="companies">
+                <li><img src="./images/companies/company_1.png" alt=""></li>
+                <li><img src="./images/companies/company_2.png" alt=""></li>
+                <li><img src="./images/companies/company_3.png" alt=""></li>
+                <li><img src="./images/companies/company_4.png" alt=""></li>
+                <li><img src="./images/companies/company_5.png" alt=""></li>
+                <li><img src="./images/companies/company_6.png" alt=""></li>
+            </ul>
+        </section>
+        <section id="work">
+            <h4 class="section-sub-title">What we do</h4>
+            <h3 class="section-title">Some of our work</h3>
+            <div class="rectangle-red"></div>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt fringilla quam, eget finibus
+                nunc.
+                Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id hendrerit
+                gravida.
+            </p>
+
+            <ul class="our-works">
+                <li><a href="#"><img src="images/works/work_1.png" alt=""></a></li>
+                <li><a href="#"><img src="images/works/work_2.png" alt=""></a></li>
+                <li><a href="#"><img src="images/works/work_3.png" alt=""></a></li>
+                <li><a href="#"><img src="images/works/work_4.png" alt=""></a></li>
+                <li><a href="#"><img src="images/works/work_5.png" alt=""></a></li>
+                <li><a href="#"><img src="images/works/work_6.png" alt=""></a></li>
+                <li><a href="#"><img src="images/works/work_7.png" alt=""></a></li>
+            </ul>
+
+            <ul class="quotes-slider" id="SECOND_SLIDER">
+                <li class="quote-slider-item">
+                    <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
+                    <blockquote class="quote">
+                        <img src="images/slider/author_1.png" class="quote-image">
+                        <div class="quote-text">"Change before you have to."
+                            <footer>Jack Welch</footer>
+                        </div>
+                    </blockquote>
+                    <button class="quote-arrow-right"><span class="fas fa-angle-right"></span></button>
+                </li>
+                <li class="quote-slider-item">
+                    <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
+                    <blockquote class="quote">
+                        <img src="images/slider/author_1.png" class="quote-image">
+                        <div class="quote-text">"Education without values, as useful as it is, seems rather to make man
+                            a more clever devil."
+                            <footer>C. S. Lewis</footer>
+                        </div>
+                    </blockquote>
+                    <button class="quote-arrow-right"><span class="fas fa-angle-right"></span></button>
+                </li>
+                <li class="quote-slider-item">
+                    <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
+                    <blockquote class="quote">
+                        <img src="images/slider/author_1.png" class="quote-image">
+                        <div class="quote-text">"No dream is too big. No challenge is too great."
+                            <footer>Donald Trump</footer>
+                        </div>
+                    </blockquote>
+                    <button class="quote-arrow-right"><span class="fas fa-angle-right"></span></button>
+                </li>
+            </ul>
+        </section>
+        <section id="opinions" class="opinions">
+            <h4 class="section-sub-title">Happy clients</h4>
+            <h3 class="section-title">What people say</h3>
+            <div class="rectangle-red"></div>
+            <ul class="people-opinions">
+                <li>
+                    <blockquote>
+                        <img src="images/opinions/opinion-1.png" alt="">
+                        <span class="opinion-author"></span>
+                        <span class="opinion-author-job"></span>
+                        <div class="rectangle-red"></div>
+                        <span class="opinion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            tincidunt fringilla quam, eget finibus
+                            nunc.
+                            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id
+                            hendrerit
+                            gravida.</span>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <img src="images/opinions/opinion-2.png" alt="">
+                        <span class="opinion-author"></span>
+                        <span class="opinion-author-job"></span>
+                        <div class="rectangle-red"></div>
+                        <span class="opinion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            tincidunt fringilla quam, eget finibus
+                            nunc.
+                            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id
+                            hendrerit
+                            gravida.</span>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <img src="images/opinions/opinion-3.png" alt="">
+                        <span class="opinion-author"></span>
+                        <span class="opinion-author-job"></span>
+                        <div class="rectangle-red"></div>
+                        <span class="opinion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            tincidunt fringilla quam, eget finibus
+                            nunc.
+                            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id
+                            hendrerit
+                            gravida.</span>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <img src="images/opinions/opinion-4.png" alt="">
+                        <span class="opinion-author"></span>
+                        <span class="opinion-author-job"></span>
+                        <div class="rectangle-red"></div>
+                        <span class="opinion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            tincidunt fringilla quam, eget finibus
+                            nunc.
+                            Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id
+                            hendrerit
+                            gravida.</span>
+                    </blockquote>
+                </li>
+
+            </ul>
+        </section>
+        <section id="blog">
+            <h4 class="section-sub-title">Our stories</h4>
+            <h3 class="section-title">Latest blog</h3>
+            <div class="rectangle-red"></div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="./bundle.js"></script>
 </body>
+
 </html>

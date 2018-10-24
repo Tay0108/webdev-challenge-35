@@ -6,15 +6,16 @@ function quotesSlider() {
     let slideIndex = 1;
     let arrowsLeft;
     let arrowsRight;
+    let slider;
 
     function plusDivs(n) {
         changeQuote(slideIndex += n);
     }
 
     function changeQuote(n) {
-        let singleSlide = document.getElementsByClassName('quote-slider-item');
+        let singleSlide = slider.children;
 
-        //set all <li> on display: none;
+        // set all <li> on display: none;
         for (let i = 0; i < singleSlide.length; i++) {
             singleSlide[i].style.display = 'none';
         }
@@ -29,7 +30,10 @@ function quotesSlider() {
         singleSlide[slideIndex - 1].style.display = 'block';
     }
 
-    function init() {
+    function init(sliderId) {
+
+        slider = document.getElementById(sliderId);
+
         changeQuote(slideIndex);
         arrowsLeft = document.getElementsByClassName('quote-arrow-left');
         arrowsRight = document.getElementsByClassName('quote-arrow-right');

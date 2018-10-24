@@ -11,9 +11,6 @@ body {
 
 a {
     color: #FFFFFF;
-}
-
-a:hover {
     text-decoration: none;
 }
 
@@ -409,22 +406,33 @@ section {
     color: #999999;
     display: block;
     overflow: hidden;
-    float: left;
     width: 80%;
     padding: 15px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%);
-    margin-left: -40%;
+    transform: translate(-50%, -50%);
+    /* margin-left: -10%; */
 }
 
 .quote-icon {
     border: 2px solid #95E1D3;
     color: #95E1D3;
-    float: left;
     padding: 12px;
     margin-right: 5px;
+}
+
+.quote-image {
+    margin-right: 5px;
+    width: 50px;
+    height: auto;
+}
+
+.quote-text {
+    position: absolute;
+    top: 50%;
+    left: 67px;
+    transform: translateY(-50%);
 }
 
 .quotes-slider {
@@ -536,4 +544,19 @@ section {
     height: auto;
     margin-left: -30px;
     outline: 0;
+}
+
+.what-we-do-icon {
+    margin-right: 10px;
+}
+
+.opinions:before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/opinions-bg.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    z-index: -1;
 }
