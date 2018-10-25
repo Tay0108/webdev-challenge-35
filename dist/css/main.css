@@ -568,7 +568,7 @@ section {
     z-index: -1;
 }
 
-.people-opinions li{
+.people-opinions li {
     margin-bottom: 50px;
 }
 
@@ -606,4 +606,8 @@ section {
     height: 3px;
     margin: 10px 0;
     background-color: #F38181;
+}
+
+.opinions {
+    padding-bottom: 20px;
 }
