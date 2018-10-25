@@ -550,13 +550,60 @@ section {
     margin-right: 10px;
 }
 
-.opinions:before {
+.opinions {
+    position: relative;
+}
+
+.opinions::before {
     content: '';
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30px;
     background-image: url('../images/opinions-bg.png');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     z-index: -1;
+}
+
+.people-opinions li{
+    margin-bottom: 50px;
+}
+
+.opinion {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.opinion-content {
+    margin-left: 20px;
+    line-height: 1.3em;
+}
+
+.opinion-author-img {
+    display: inline;
+}
+
+.opinion-author {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.opinion-author-job {
+    font-style: italic;
+    font-weight: lighter;
+    color: #333333;
+}
+
+.opinion-separator {
+    width: 50px;
+    height: 3px;
+    margin: 10px 0;
+    background-color: #F38181;
 }
