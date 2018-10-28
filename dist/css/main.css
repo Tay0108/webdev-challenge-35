@@ -210,7 +210,6 @@ a.page-logo:active {
     background-color: #F38181;
 }
 
-
 /* main */
 
 main {
@@ -524,6 +523,8 @@ section {
     z-index: -1;
 }
 
+/* Some of our works */
+
 .our-works {
     position: relative;
     font-size: 0;
@@ -549,6 +550,8 @@ section {
 .what-we-do-icon {
     margin-right: 10px;
 }
+
+/* What people say */
 
 .opinions {
     position: relative;
@@ -610,4 +613,66 @@ section {
 
 .opinions {
     padding-bottom: 20px;
+}
+
+/* Latest blog */
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post-image {
+    position: relative;
+}
+
+.blog-post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post-image .date {
+    color: #FFFFFF;
+    background: #95E1D3;
+    width: 50px;
+    text-align: center;
+}
+
+.blog-post-image .date {
+    font-style: italic;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+}
+
+.blog-post-image .date .date-day {
+    font-style: normal;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.blog-post-title {
+    text-transform: uppercase;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.blog-post-text {
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-post-icons {
+    margin-top: 10px;
+}
+
+.blog-post-number {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog-post-icon {
+    color: #95E1D3;
+    margin-right: 5px;
 }
