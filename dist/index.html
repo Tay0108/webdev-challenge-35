@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/odometer-default.css">
@@ -29,8 +29,8 @@
                     <li><a class="menu-link" href="#work">Work</a></li>
                     <li><a class="menu-link" href="#blog">Blog</a></li>
                     <li><a class="menu-link" href="#contact">Contact</a></li>
-                    <li><a href="#shop" class="fas fas-shopping-cart" aria-hidden="true"></a></li>
-                    <li><a href="#search" class="fas fas-search" aria-hidden="true"></a></li>
+                    <li><a href="#shop" class="fas fa-shopping-cart" aria-hidden="true"></a></li>
+                    <li><a href="#search" class="fas fa-search" aria-hidden="true"></a></li>
                 </ul>
             </nav>
         </header>
@@ -61,7 +61,7 @@
     </section>
 
     <!-- main container -->
-    <main>
+    <main class="page-main">
         <section id="about">
             <h4 class="section-sub-title">What we do</h4>
             <h3 class="section-title">Story about us</h3>
@@ -382,10 +382,13 @@
                 <li class="blog-post">
                     <div class="blog-post-image">
                         <img src="images/blog/blog-1.png" alt="">
-                        <div class="date"><div class="date-day">15</div>Jan</div>
+                        <div class="date">
+                            <div class="date-day">15</div>Jan
+                        </div>
                     </div>
-                    <div class="blog-post-title">Lorem ipsum dolor sit amet</div>
-                    <div class="blog-post-text">Consectetur adipiscing elit, sed do euismod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <h5 class="blog-post-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="blog-post-text">Consectetur adipiscing elit, sed do euismod tempor incididunt ut labore
+                        et dolore magna aliqua.</p>
                     <ul class="blog-post-icons">
                         <li class="blog-post-number"><span class="fas fa-eye blog-post-icon"></span>542</li>
                         <li class="blog-post-number"><span class="fas fa-comment blog-post-icon"></span>17</li>
@@ -393,35 +396,70 @@
                 </li>
 
                 <li class="blog-post">
-                        <div class="blog-post-image">
-                            <img src="images/blog/blog-2.png" alt="">
-                            <div class="date"><div class="date-day">14</div>Jan</div>
+                    <div class="blog-post-image">
+                        <img src="images/blog/blog-2.png" alt="">
+                        <div class="date">
+                            <div class="date-day">14</div>Jan
                         </div>
-                        <div class="blog-post-title">Sed do eiusmod tempor</div>
-                        <div class="blog-post-text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        <ul class="blog-post-icons">
-                            <li class="blog-post-number"><span class="fas fa-eye blog-post-icon"></span>992</li>
-                            <li class="blog-post-number"><span class="fas fa-comment blog-post-icon"></span>42</li>
-                        </ul>
-                    </li>
+                    </div>
+                    <h5 class="blog-post-title">Sed do eiusmod tempor</h5>
+                    <p class="blog-post-text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                    <ul class="blog-post-icons">
+                        <li class="blog-post-number"><span class="fas fa-eye blog-post-icon"></span>992</li>
+                        <li class="blog-post-number"><span class="fas fa-comment blog-post-icon"></span>42</li>
+                    </ul>
+                </li>
 
-                    <li class="blog-post">
-                            <div class="blog-post-image">
-                                <img src="images/blog/blog-3.png" alt="">
-                                <div class="date"><div class="date-day">12</div>Jan</div>
-                            </div>
-                            <div class="blog-post-title">incididunt ut labore et dolore</div>
-                            <div class="blog-post-text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            <ul class="blog-post-icons">
-                                <li class="blog-post-number"><span class="fas fa-eye blog-post-icon"></span>1560</li>
-                                <li class="blog-post-number"><span class="fas fa-comment blog-post-icon"></span>98</li>
-                            </ul>
-                        </li>
+                <li class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="images/blog/blog-3.png" alt="">
+                        <div class="date">
+                            <div class="date-day">12</div>Jan
+                        </div>
+                    </div>
+                    <h5 class="blog-post-title">incididunt ut labore et dolore</h5>
+                    <p class="blog-post-text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="blog-post-icons">
+                        <li class="blog-post-number"><span class="fas fa-eye blog-post-icon"></span>1560</li>
+                        <li class="blog-post-number"><span class="fas fa-comment blog-post-icon"></span>98</li>
+                    </ul>
+                </li>
             </ul>
-
         </section>
     </main>
-    <footer>
+    <footer class="page-footer">
+        <section class="map">
+            <span class="fas fa-map-marker-alt map-marker"></span>
+            <h3 class="map-link"><a href="#">Open map</a></h3>
+            <div class="map-rectangle"></div>
+        </section>
+        <ul class="footer-sections">
+            <li>
+                <div class="footer-section">
+                    <h2 class="footer-title">MoGo</h2>
+                    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="footer-followers"><span class="footer-followers-number">15k</span> followers</div>
+                    <div class="social-media">Follow Us:
+                        <ul class="social-media-icons">
+                            <li class="fas fa-facebook-f"></li>
+                            <li class="fas fa-twitter"></li>
+                            <li class="fas fa-instagram"></li>
+                            <li class="fas fa-pinterest-p"></li>
+                            <li class="fas fa-google-plus-g"></li>
+                            <li class="fas fa-youtube"></li>
+                            <li class="fas fa-basketball-ball"></li>
+                            <li class="fas fa-tumblr"></li>
+                        </ul>
+                    </div>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your Email..."><button>Subscribe</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
     </footer>
     <script src="./bundle.js"></script>
 </body>
