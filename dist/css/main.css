@@ -71,6 +71,8 @@ a {
 .page-nav a {
     color: #000000;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .page-nav a:hover {
@@ -96,6 +98,7 @@ a {
     border: none;
     color: #FFFFFF;
     display: inline;
+    font-size: 1.2em;
 }
 
 .menu-hamburger:active {
@@ -113,6 +116,7 @@ a {
     position: absolute;
     top: 30px;
     right: 30px;
+    font-size: 1.2em;
 }
 
 .menu-link {
@@ -217,7 +221,7 @@ a.page-logo:active {
 }
 
 section {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .section-sub-title {
@@ -253,6 +257,7 @@ section {
     color: #FFFFFF;
     text-transform: uppercase;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dynamic-numbers:before {
@@ -308,6 +313,7 @@ section {
     text-transform: uppercase;
     color: #333333;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .services-list li span {
@@ -358,13 +364,16 @@ section {
     width: 90px;
 }
 
+.what-we-do-list-wrapper {
+    margin-bottom: 30px;
+}
+
 .image-photography {
     width: 100%;
     height: auto;
 }
 
 .what_we_do-list {
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -374,6 +383,8 @@ section {
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
     position: relative;
+    color: #333333;
+    font-weight: bold;
 }
 
 .what_we_do-list dd {
@@ -401,41 +412,55 @@ section {
     padding: 0;
 }
 
-.quote {
+.what-we-do-icon {
+    margin-right: 10px;
+    color: #95E1D3;
+}
+
+.quotes-slider-item {
+    text-align: center;
+}
+
+.quote-wrapper {
     color: #999999;
     display: block;
-    overflow: hidden;
     width: 80%;
     padding: 15px 10px;
+}
+
+.quote {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* margin-left: -10%; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+.quote-icon-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .quote-icon {
     border: 2px solid #95E1D3;
     color: #95E1D3;
-    padding: 12px;
-    margin-right: 5px;
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 1.5em;
 }
 
 .quote-image {
-    margin-right: 5px;
+    margin-right: 10px;
     width: 50px;
     height: auto;
 }
 
-.quote-text {
-    position: absolute;
-    top: 50%;
-    left: 67px;
-    transform: translateY(-50%);
-}
 
 .quotes-slider {
-    height: 100px;
+    height: 200px;
     position: relative;
 }
 
@@ -452,6 +477,8 @@ section {
 .quote footer {
     margin-top: 5px;
     font-weight: bold;
+    color: #333333;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .quote footer:before {
@@ -462,16 +489,23 @@ section {
 
 .quotes-slider-item {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .quote-arrow-left {
-    display: block;
-    float: left;
-    height: 100%;
     background: none;
     border: none;
-    width: 10%;
     line-height: 100px;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    color: #999999;
 }
 
 .quote-arrow-right {
@@ -481,7 +515,10 @@ section {
     height: 100%;
     width: 10%;
     position: absolute;
+    top: 0;
     right: 0;
+    font-size: 1em;
+    color: #999999;
 }
 
 /* Meet our team */
@@ -511,6 +548,7 @@ section {
     text-align: center;
     position: relative;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .companies:before {
@@ -528,6 +566,7 @@ section {
 .our-works {
     position: relative;
     font-size: 0;
+    margin-left: -30px;
 }
 
 .our-works:before {
@@ -535,7 +574,6 @@ section {
     position: absolute;
     width: 100vw;
     z-index: -1;
-    background-color: #F38181;
     height:100%;
     left: -30px;
 }
@@ -543,18 +581,14 @@ section {
 .our-works li a img {
     width: 100vw;
     height: auto;
-    margin-left: -30px;
     outline: 0;
-}
-
-.what-we-do-icon {
-    margin-right: 10px;
 }
 
 /* What people say */
 
 .opinions {
     position: relative;
+    padding-top: 50px;
 }
 
 .opinions::before {
@@ -569,6 +603,10 @@ section {
     background-repeat: no-repeat;
     width: 100vw;
     z-index: -1;
+}
+
+.people-opinions {
+    margin-top: 50px;
 }
 
 .people-opinions li {
@@ -656,6 +694,7 @@ section {
     text-transform: uppercase;
     color: #333333;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .blog-post-text {
@@ -779,6 +818,7 @@ section {
     margin: 0;
     border: 1px solid #E5E5E5;
     border-right: none;
+    width: 60%;
 }
 
 .subscribe-form button {
@@ -788,6 +828,8 @@ section {
     border: none;
     padding: 10px 16px;
     box-sizing: border-box;
+    width: 40%;
+    font-size: 1em;
 }
 
 .footer-section-title {
@@ -854,3 +896,204 @@ section {
 .copyrights a {
     color: #F38181;
 }
+
+
+/* Tablet version: */
+
+@media only screen and (min-width: 768px) { 
+
+    .page-logo {
+        font-size: 2em;
+    }
+
+    .menu-hamburger {
+        font-size: 2em;
+    }
+
+    .menu-close {
+        font-size: 2em;
+    }
+
+    .page-nav ul li {
+        padding: 20px 0;
+    }
+
+    .page-nav a {
+        font-size: 2em;
+    }
+
+    .about-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-images li {
+        width: 32%;
+    }
+
+    .about-images li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .dynamic-numbers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dynamic-numbers li {
+        padding: 60px 0;
+    }
+
+    .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .services-list li {
+        width: 30%;
+        text-align: left;
+    }
+
+    .design-inner {
+        min-height: 480px;
+        padding-top: 50px;
+    }
+
+    .tablet {
+        width: 300px;
+        left: calc(50% - 150px);
+    }
+    
+    .phone {
+        width: 180px;
+        left: calc(50% + 45px);
+    }
+
+    .what-we-do-list-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .what-we-do-list-image {
+        width: 40%;
+    }
+
+    .what_we_do-list {
+        width: 58%; 
+    }
+
+    .quote-icon {
+        padding: 12px;
+        font-size: 2em;
+    }
+
+    .quote-text {
+        left: 77px;
+    }
+    
+    .quote-arrow-left {
+        font-size: 2em;
+    }
+    
+    .quote-arrow-right {
+        font-size: 2em;
+    }
+
+    .team-members {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .team-members li {
+        width: 32%;
+    }
+
+    .companies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .companies li {
+        width: 15%;
+    }
+
+    .companies li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .our-works {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 50vw;
+    }
+
+    .our-works li {
+        width: 25vw;
+        position: absoulte; 
+    }
+
+    .our-works li a img {
+        outline: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .people-opinions {
+        display: flex;
+        direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .people-opinions li {
+        width: 46%;
+    }
+
+    .blog-posts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blog-post {
+        width: 30%;
+    }
+
+    .map-marker {
+        font-size: 2em;
+    }
+
+    .map-link {
+        font-size: 1.7em;
+    }
+
+    .footer-sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        width: 32%;
+    }
+
+    .instagram-miniature {
+        width: 33%;
+    }
+
+    .instagram-miniature img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
