@@ -1,5 +1,6 @@
 'use strict';
 
+import 'jquery';
 import 'odometer';
 
 // scrolling odometer
