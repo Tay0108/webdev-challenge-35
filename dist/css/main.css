@@ -474,8 +474,11 @@ section.narrow {
 }
 
 .quotes-slider ul {
-    position: relative;
     height: 200px;
+}
+
+.quotes-slider {
+    position: relative;
 }
 
 .quotes-slider:before {
@@ -1005,7 +1008,7 @@ section.narrow {
     }
 
     .what_we_do-list {
-        width: 50%; 
+        width: 50%;
     }
 
     .quote-icon {
