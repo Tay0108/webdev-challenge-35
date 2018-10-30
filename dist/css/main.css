@@ -14,6 +14,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 .intro::before {
     content: '';
     position: absolute;
@@ -442,7 +446,6 @@ section.narrow {
     display: flex;
     flex-direction: row;
     align-content: center;
-
 }
 
 .quote-icon-wrapper {
@@ -470,9 +473,9 @@ section.narrow {
     justify-content: center;
 }
 
-.quotes-slider {
-    height: 200px;
+.quotes-slider ul {
     position: relative;
+    height: 200px;
 }
 
 .quotes-slider:before {
