@@ -21,7 +21,7 @@
             <a class="page-logo" href="#">MoGo</a>
             <button type="button" class="fas fa-bars menu-hamburger" aria-hidden="true"></button>
             <nav class="page-nav">
-                <a class="page-logo" href="#">MoGo</a>
+                <a class="page-logo logo-nav-opened" href="#">MoGo</a>
                 <button type="button" class="fas fa-times menu-close" aria-hidden="true"></button>
                 <ul>
                     <li><a class="menu-link" href="#about">About</a></li>
@@ -62,7 +62,7 @@
 
     <!-- main container -->
     <main class="page-main">
-        <section id="about">
+        <section class="narrow" id="about">
             <h4 class="section-sub-title">What we do</h4>
             <h3 class="section-title">Story about us</h3>
             <div class="rectangle-red"></div>
@@ -77,7 +77,9 @@
                 <li><img src="images/img_2.png"></li>
                 <li><img src="images/img_3.png"></li>
             </ul>
-            <ul class="dynamic-numbers">
+        </section>
+        <section class="dynamic-numbers">
+            <ul class="narrow">
                 <li><span id="odometer1" class="odometer">0</span>Web design projects</li>
                 <li><span id="odometer2" class="odometer">0</span>Happy client</li>
                 <li><span id="odometer3" class="odometer">0</span>Award winner</li>
@@ -85,8 +87,8 @@
                 <li><span id="odometer5" class="odometer">0</span>Members</li>
             </ul>
         </section>
-        <section id="service" class="service">
-            <h4 class="section-sub-title">We work with</h4>
+        <section id="service" class="service narrow">
+            <h4 class=" section-sub-title">We work with</h4>
             <h3 class="section-title">Amazing services</h3>
             <div class="rectangle-red"></div>
             <ul class="services-list">
@@ -137,7 +139,7 @@
             </div>
             <img class="phone" src="images/phone.png">
         </section>
-        <section id="what_we_do">
+        <section id="what_we_do" class="narrow">
             <h4 class="section-sub-title">Service</h4>
             <h3 class="section-title">What we do</h3>
             <div class="rectangle-red"></div>
@@ -189,7 +191,9 @@
                     </dd>
                 </dl>
             </div>
-            <ul class="quotes-slider" id="FIRST_SLIDER">
+        </section>
+        <section class="quotes-slider">
+            <ul class="narrow" id="FIRST_SLIDER">
                 <li class="quote-slider-item">
                     <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
                     <div class="quote-wrapper">
@@ -224,7 +228,7 @@
                 </li>
             </ul>
         </section>
-        <section id="meet-us">
+        <section id="meet-us" class="narrow">
             <h4 class="section-sub-title">Who we are</h4>
             <h3 class="section-title">Meet our team</h3>
             <div class="rectangle-red"></div>
@@ -251,7 +255,9 @@
                     <span class="member-title">Developer</span>
                 </li>
             </ul>
-            <ul class="companies">
+        </section>
+        <section class="companies">
+            <ul class="narrow">
                 <li><img src="./images/companies/company_1.png" alt=""></li>
                 <li><img src="./images/companies/company_2.png" alt=""></li>
                 <li><img src="./images/companies/company_3.png" alt=""></li>
@@ -260,7 +266,7 @@
                 <li><img src="./images/companies/company_6.png" alt=""></li>
             </ul>
         </section>
-        <section id="work">
+        <section id="work" class="narrow">
             <h4 class="section-sub-title">What we do</h4>
             <h3 class="section-title">Some of our work</h3>
             <div class="rectangle-red"></div>
@@ -270,8 +276,9 @@
                 Donec lacinia enim velit, vitae ultricies purus tincidunt ut. Praesent consequat dui id hendrerit
                 gravida.
             </p>
-
-            <ul class="our-works">
+        </section>
+        <section class="our-works">
+            <ul>
                 <li><a href="#"><img src="images/works/work_1.png" alt=""></a></li>
                 <li><a href="#"><img src="images/works/work_2.png" alt=""></a></li>
                 <li><a href="#"><img src="images/works/work_3.png" alt=""></a></li>
@@ -280,8 +287,9 @@
                 <li><a href="#"><img src="images/works/work_6.png" alt=""></a></li>
                 <li><a href="#"><img src="images/works/work_7.png" alt=""></a></li>
             </ul>
-
-            <ul class="quotes-slider" id="SECOND_SLIDER">
+        </section>
+        <section class="quotes-slider">
+            <ul class="narrow" id="SECOND_SLIDER">
                 <li class="quote-slider-item">
                     <button class="quote-arrow-left"><span class="fas fa-angle-left"></span></button>
                     <blockquote class="quote">
@@ -319,7 +327,7 @@
             <h4 class="section-sub-title">Happy clients</h4>
             <h3 class="section-title">What people say</h3>
             <div class="rectangle-red"></div>
-            <ul class="people-opinions">
+            <ul class="people-opinions narrow">
                 <li>
                     <blockquote class="opinion">
                         <div class="opinion-author-img"><img src="images/opinions/opinion-1.png" alt=""></div>
@@ -385,7 +393,7 @@
                 </li>
             </ul>
         </section>
-        <section id="blog">
+        <section id="blog" class="narrow">
             <h4 class="section-sub-title">Our stories</h4>
             <h3 class="section-title">Latest blog</h3>
             <div class="rectangle-red"></div>
@@ -440,7 +448,7 @@
             </ul>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer narrow">
         <section class="map">
             <span class="fas fa-map-marker-alt map-marker"></span>
             <h3 class="map-link"><a href="#">Open map</a></h3>

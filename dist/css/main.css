@@ -73,10 +73,15 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2em;
+    
 }
 
 .page-nav a:hover {
      color: #FCE38A;
+}
+
+.menu-link {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .page-nav-opened {
@@ -119,9 +124,7 @@ a {
     font-size: 1.2em;
 }
 
-.menu-link {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 .page-logo {
     font-family: 'Montserrat', sans-serif;
@@ -220,7 +223,7 @@ a.page-logo:active {
     padding: 0 30px;
 }
 
-section {
+section.narrow {
     padding-top: 50px;
 }
 
@@ -254,9 +257,12 @@ section {
 }
 
 .dynamic-numbers {
+    position: relative;
+}
+
+.dynamic-numbers ul {
     color: #FFFFFF;
     text-transform: uppercase;
-    position: relative;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -273,14 +279,14 @@ section {
     height: 100%;
 }
 
-.dynamic-numbers li {
+.dynamic-numbers ul li {
     display: block;
     text-align: center;
     border-bottom: 1px solid #B5EAE0;
     padding: 10px 0;
 }
 
-.dynamic-numbers li:last-of-type {
+.dynamic-numbers ul li:last-of-type {
     border-bottom: none;
 }
 
@@ -458,6 +464,11 @@ section {
     height: auto;
 }
 
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .quotes-slider {
     height: 200px;
@@ -565,8 +576,11 @@ section {
 
 .our-works {
     position: relative;
-    font-size: 0;
     margin-left: -30px;
+}
+
+.our-works ul {
+    font-size: 0;
 }
 
 .our-works:before {
@@ -578,7 +592,7 @@ section {
     left: -30px;
 }
 
-.our-works li a img {
+.our-works ul li a img {
     width: 100vw;
     height: auto;
     outline: 0;
@@ -741,7 +755,7 @@ section {
 .map {
     position: relative;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
 .map-marker {
@@ -918,7 +932,7 @@ section {
         padding: 20px 0;
     }
 
-    .page-nav a {
+    .menu-link {
         font-size: 2em;
     }
 
@@ -937,12 +951,12 @@ section {
         height: auto;
     }
 
-    .dynamic-numbers {
+    .dynamic-numbers ul {
         display: flex;
         justify-content: space-between;
     }
 
-    .dynamic-numbers li {
+    .dynamic-numbers ul li {
         padding: 60px 0;
     }
 
@@ -972,6 +986,11 @@ section {
         left: calc(50% + 45px);
     }
 
+    .quote-image {
+        width: 100px;
+        height: auto;
+    }
+
     .what-we-do-list-wrapper {
         display: flex;
         flex-direction: row;
@@ -989,10 +1008,6 @@ section {
     .quote-icon {
         padding: 12px;
         font-size: 2em;
-    }
-
-    .quote-text {
-        left: 77px;
     }
     
     .quote-arrow-left {
@@ -1014,34 +1029,38 @@ section {
     }
 
     .companies {
+        box-sizing: border-box;
+    }
+
+    .companies ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 50px 0;
     }
 
-    .companies li {
+    .companies ul li {
         width: 15%;
     }
 
-    .companies li img {
+    .companies ul li img {
         width: 100%;
         height: auto;
     }
 
-    .our-works {
+    .our-works ul {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         height: 50vw;
     }
 
-    .our-works li {
+    .our-works ul li {
         width: 25vw;
         position: absoulte; 
     }
 
-    .our-works li a img {
+    .our-works ul li a img {
         outline: 0;
         width: 100%;
         height: auto;
@@ -1094,6 +1113,91 @@ section {
         width: 100%;
         height: auto;
     }
+
+}
+
+
+/* Desktop version */
+
+@media only screen and (min-width: 1200px) { 
+
+    .page-logo {
+        font-size: 3em;
+    }
+
+    .page-title {
+        font-size: 5em;
+    }
+
+    .page-sub-title {
+        font-size: 3em;
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .page-nav {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: none;
+        background-color: transparent;
+        position: static;
+        width: 600px;
+        box-sizing: border-box;
+    }
+
+    .page-nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+     }
+
+
+    .logo-nav-opened {
+         display: none;
+     }
+
+     .page-nav a {
+         color: #FFFFFF;
+         font-size: 1.2em;
+     }
+
+     .page-nav a:hover {
+        color: #FCE38A;
+     }
+
+     .page-nav li:hover {
+        border-bottom: 3px solid #FCE38A;
+     }
+
+     .menu-link {
+        font-weight: normal;
+     }
+
+     .menu-close {
+         display: none;
+     }
+
+     .narrow {
+        width: 960px;
+        margin: 0 auto;
+     }
+
+     .quote-icon {
+         margin-right: 30px;
+     }
+
+     .quote-image {
+         margin-right: 30px;
+     }
 
 }
 
