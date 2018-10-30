@@ -1202,5 +1202,19 @@ section.narrow {
          margin-right: 30px;
      }
 
+     .tablet {
+        width: 450px;
+        left: calc(50% - 225px);
+    }
+    
+    .phone {
+        width: 250px;
+        left: calc(50% + 125px);
+    }
+
+    .design-inner {
+        min-height: 700px;
+        padding-top: 50px;
+    }
 }
 
