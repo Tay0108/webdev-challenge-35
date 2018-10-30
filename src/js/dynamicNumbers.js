@@ -1,6 +1,9 @@
 'use strict';
 
-import 'jquery';
+
+import jQuery from 'jquery';
+window.$ = window.jQuery = jQuery;
+
 import 'odometer';
 
 // scrolling odometer

@@ -1,6 +1,7 @@
 'use strict';
 
-import 'jquery';
+import jQuery from 'jquery';
+window.$ = window.jQuery = jQuery;
 
 // services module:
 function services() {
