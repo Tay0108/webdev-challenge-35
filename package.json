@@ -22,8 +22,8 @@
   "homepage": "https://github.com/Tay0108/webdev35#readme",
   "devDependencies": {
     "babel-core": "^4.7.16",
-    "webpack": "^4.19.0",
-    "webpack-cli": "^3.3.12",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
